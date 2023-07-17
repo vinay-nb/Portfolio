@@ -410,9 +410,24 @@ textarea {
   display: flex;
   text-align: center;
   width: 10px;
-  height: 35rem;
+  height: 37.5rem;
   border-radius: 10%;
   background-color: #972020; }
+
+.education_content-experience {
+  margin-left: 50%;
+  display: flex;
+  text-align: center;
+  width: 10px;
+  height: 47rem;
+  border-radius: 10%;
+  background-color: #972020; }
+  @media only screen and (max-width: 37.5em) {
+    .education_content-experience {
+      height: 62rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .education_content-experience {
+      height: 60rem; } }
 
 .education_details {
   position: relative;
