@@ -307,7 +307,7 @@
     background-color: $themeClrPrimary;
   }
 
-  &__content-experience {
+  &_content-experience {
     margin-left: 50%;
     display: flex;
     text-align: center;
@@ -315,11 +315,14 @@
     height: 47rem;
     border-radius: 10%;
     background-color: $themeClrPrimary;
-    @media only screen and (max-width: 37.5em) {
-      height: 62rem;
-    }
-    @media only screen and (max-width: 56.25em) {
+    @include respond(phone) {
       height: 60rem;
+    }
+    @include respond(tab-port) {
+      height: 60.5rem;
+    }
+    @include respond(tab-land) {
+      height: 62.5rem;
     }
   }
 
